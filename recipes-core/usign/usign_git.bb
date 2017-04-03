@@ -16,6 +16,7 @@ inherit cmake pkgconfig
 S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE += "${EXTRA_OECONF}"
+EXTRA_OECMAKE_remove = "--disable-static"
 
 PACKAGECONFIG ??= "ubox"
 
